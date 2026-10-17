@@ -1,0 +1,43 @@
+{
+  "source": "transactions_history.csv",
+  "metrics": {
+    "threshold": 0.98204,
+    "rows": 49173,
+    "positives": 54,
+    "precision": 0.03456,
+    "recall": 0.27778,
+    "f1": 0.06148,
+    "accuracy": 0.99069,
+    "pr_auc": 0.02545,
+    "roc_auc": 0.93834,
+    "tp": 15,
+    "fp": 419,
+    "tn": 48700,
+    "fn": 39,
+    "alerts": 434,
+    "prevalence": 0.001098,
+    "validation_threshold_selected_for": "F1",
+    "train_rows": 147518,
+    "validation_rows": 49173
+  },
+  "sampling": {
+    "rows_used": 245864,
+    "rows_excluded": 0,
+    "features": [
+      "amount_log",
+      "is_refund",
+      "hour",
+      "day_of_week",
+      "month",
+      "period",
+      "merchant_category",
+      "method",
+      "region",
+      "errors"
+    ],
+    "source_label_column": "Is Fraud?",
+    "split": "stratified 60/20/20 train/validation/test, random_state=42",
+    "warning": "Random splits may overestimate future performance if customer patterns or dates overlap. External or temporal validation is required for real deployment."
+  },
+  "errors": []
+}
