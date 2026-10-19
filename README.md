@@ -1,14 +1,16 @@
-# FinGuard Live — IBM Z Datathon Theme 1
+# FinGuard Live
+
+An interactive fraud-intelligence prototype built for the IBM Z Datathon — Theme 1: Real-Time AI for Critical Decisions.
 
 **Theme 1: Real-Time AI for Critical Decisions** — payment-risk replay and human-in-the-loop response.
 
-## Open the completed website (no Terminal needed)
+## Demo
 
 Download and open `FinGuard_Live_Theme1.html` in Chrome or another modern browser. It is self-contained and already embeds analytics computed from the three real CSV uploads (`transactions_history.csv`, `transactions.csv`, `clients.csv`). Start with **Live payment replay** in the left navigation.
 
 The replay uses **3,800 selected, held-out historical cases** rather than a production payment connection or an unbiased random live stream. Events are played in time order, but source labels and precomputed logistic-model scores originate from the original offline evaluation. The replay does **not** perform per-event Python model inference. Client-side event processing time and throughput measure the **browser simulation** only, not IBM LinuxONE or model-serving performance. This distinction is made explicit in the interface.
 
-## Live demo workflow
+## Demo Workflow
 
 1. Open **Live payment replay** and click **Start replay**.
 2. Change **Events / second** and watch transaction count, review alerts, replay throughput, and browser decision time.

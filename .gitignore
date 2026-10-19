@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data — do not commit source datasets
+*.csv
+data/
+
+# Local system files and logs
+.DS_Store
+*.log
